@@ -1,0 +1,18 @@
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">{{ include.title }}</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    {%- for el in include.data %}
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 px-2 py-2 rounded">
+        {{ el.icon | html }}
+      </div>
+      <h3 class="fs-2 text-body-emphasis">{{ el.title }}</h3>
+      <p>{{ el.text }}</p>
+      <a href="#" class="icon-link">
+        {{ el.link.text }}
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    {%- endfor %}
+  </div>
+</div>

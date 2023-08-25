@@ -1,0 +1,189 @@
+---
+layout: default
+---
+
+<nav class="navbar navbar-expand-sm fixed-top bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/img/ico/favicon.ico" width="32" height="32" class="d-inline-block align-text-top">
+      <span class="fs-4 mx-2">{{ site.title }}</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        {%- comment %}
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        {%- endcomment %}
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="px-3">
+  <section id="home" style="padding-top: calc(60px + 1em)"></section>
+  <section class="container px-4 py-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
+      <div class="col-10 col-sm-8 col-lg-6">
+        
+    {%- assign feature = site.data.feature %}
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        {%- for img in feature.imgs %}
+        <div class="carousel-item active">
+          <img src="{{ img }}" class="rounded d-block mx-lg-auto img-fluid" loading="lazy">
+        </div>
+        {%- endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{ feature.title }}</h1>
+        <p class="lead">{{ feature.text | markdown }}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+          {% for el in site.data.social %}
+          <a
+            class="link-secondary text-decoration-none"
+            href="{{ el.href }}"
+            {%- if el.new_tab %} target="_blank"{% endif %}
+            {%- if el.title %}
+            title="{{ el.title }}" 
+            data-bs-title="<b>{{ el.title }}</b><br>{{ el.name }}"
+            data-bs-html="true"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            {%- endif %}
+          >
+            <i class="{{ el.icon }} h4"></i>
+          </a>
+          {%- endfor %}
+        </div>
+        {%- if feature.links %}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+          {% for link in feature.links %}
+          <a class="{{ link.class }} px-3 me-md-2" href="{{ link.href }}" {%- if el.new_tab %} target="_blank"{% endif %}>
+            {{ link.text }}
+          </a>
+          {% endfor %}
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="container px-4 py-3" id="services">
+    <h2 class="pb-2 border-bottom">Services</h2>
+    <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+      {%- for el in site.data.services %}
+      <div class="col d-flex align-items-start">
+        <div
+          class=text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+        >
+          <i class="{{ el.icon }} h1 me-3 text-body-secondary"></i>
+          <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" xmlns="http://www.w3.org/2000/svg" height="1em">
+            {%- if el.icon %}
+            <use xlink:href="#{{ el.icon }}" />
+            {%- else %}
+            <use xlink:href="#cpu-fill" />
+            {%- endif %}
+          </svg> -->
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">{{ el.title }}</h3>
+          <p>{{ el.text }}</p>
+          {%- comment %}
+          <a href="#" class="btn btn-primary">{{ el.button.text }}</a>
+          {%- endcomment %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="container px-4 py-3" id="skills">
+    <!-- <h2 class="pb-2 py-2">Skills</h2> -->
+    {%- for skillset in site.data.skills %}
+    <h3 class="pb-2 border-bottom">{{ skillset.title }}</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-3">
+      {%- for el in skillset.items %}
+      <div class="col d-flex align-items-start">
+        {%- if el.icon %}
+        <h3 class="text-body-secondary flex-shrink-0 me-3">
+          <i class="{{ el.icon }}"></i>
+        </h3>
+        {%- else %}
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        {%- endif %}
+        <div>
+          <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">{{ el.title }}</h4>
+          <p>{{ el.text }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+  </section>
+
+  {% comment %}
+  {% include snippets/features/columns_with_icons.html title="Hobbies" data=site.data.hobbies %}
+  {% endcomment %}
+
+  <section class="container col-xl-10 col-xxl-8 px-4 py-3" id="contact">
+    <div class="row align-items-center g-lg-5 py-1">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">{{ site.data.contact.title }}</h1>
+        <p class="col-lg-10 fs-4">
+          {{ site.data.contact.text | markdown }}
+        </p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5 row">
+        {% for el in site.data.social %}
+        <div class="col-4 px-4 py-4">
+          <a
+            class="link-light text-decoration-none d-flex flex-column align-items-center"
+            href="{{ el.href }}"
+            {%- if el.new_tab %} target="_blank"{% endif %}
+            {%- if el.title %}
+            title="{{ el.title }}" 
+            data-bs-title="{{ el.name }}"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            {%- endif %}
+          >
+            <h1><i class="{{ el.icon }}"></i></h1>
+            <h6>{{ el.title }}</h6>
+          </a>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <footer id="_footer" class="container mt-auto">
+    <p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }}</p>
+  </footer>
+</main>

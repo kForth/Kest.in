@@ -1,0 +1,29 @@
+{% assign data = include.data %}
+<div class="row featurette">
+  <div class="col-md-7 {%- if data.flip %} order-md-2{% endif %} {{ data.class }}">
+    <h2 class="featurette-heading fw-normal lh-1">{{ data.header }}</h2>
+    <p class="lead">{{ data.text | markdown }}</p>
+    {%- if data.link %}
+    <a class="{% unless data.link.class %}link-primary{% else %}{{ data.link.class }}{% endunless %} mb-3" href="{{ data.link.href }}">{{ data.link.text }}</a>
+    {%- endif %}
+  </div>
+  <div class="col-md-5 {%- if data.flip %} order-md-1{% endif %}">
+    <div id="featurette-carousel" class="carousel slide">
+      <div class="carousel-inner">
+        {%- for img in data.imgs %}
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{ img }}">
+        </div>
+        {%- endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featurette-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featurette-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+- title: Email
+  name: "kgoforth1503@gmail.com"
+  icon: fas fa-envelope
+  href: mailto:kgoforth1503@gmail.com
+- title: GitHub
+  name: "@kforth"
+  icon: si si-github
+  href: https://github.com/kforth
+  new_tab: true
+- title: Discord
+  name: "@kest.in"
+  icon: si si-discord
+  href: https://discordapp.com/users/1062846337562988665
+  new_tab: true
+- title: Thingiverse
+  name: "@kgoforth"
+  icon: si si-thingiverse
+  href: https://www.thingiverse.com/kgoforth/designs
+  new_tab: true
+- title: Printables
+  name: "@Kestin"
+  icon: si si-printables
+  href: https://www.printables.com/@Kestin_368287
+  new_tab: true
+- title: Flickr
+  name: "@Kestin Goforth"
+  icon: si si-flickr
+  href: https://www.flickr.com/photos/193754588@N02/
+  new_tab: true

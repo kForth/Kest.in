@@ -1,0 +1,148 @@
+- title: Software
+  items:
+    - title: Windows
+      text: 
+      icon: si si-microsoft
+    - title: MacOS
+      text: 
+      icon: si si-apple
+    - title: Solidworks
+      text: 
+      icon: si si-dassaultsystemes
+    - title: Excel
+      text: 
+      icon: si si-microsoftexcel
+- title: 3D Printing
+  items:
+    - title: 3D Printer Design
+      text: 
+      icon: fas fa-print
+    - title: Hotend Design
+      text: 
+      icon: fas fa-fire
+    - title: Retrofit & Upgrade
+      text: 
+      icon: fas fa-wand-magic-sparkles
+    - title: Repair & Maintenance
+      text: 
+      icon: fas fa-screwdriver-wrench
+    - title: Performance Tuning
+      text: 
+      icon: fas fa-bolt
+    - title: High Temperature
+      text: 
+      icon: fas fa-pepper-hot
+    - title: Engineering Materials
+      text: 
+      icon: fas fa-space-shuttle
+    - title: OctoPrint
+      text: 
+      icon: si si-octoprint
+    - title: Marlin
+      text: 
+      icon: fas fa-fish
+    - title: Klipper
+      text: 
+      icon: fas fa-microchip
+- title: Programming Languages
+  items:
+    - title: Python
+      text: 
+      icon: si si-python
+    - title: C#
+      text: 
+      icon: si si-csharp
+    - title: JavaScript
+      text: 
+      icon: si si-javascript
+    - title: HTML & CSS
+      text: 
+      icon: si si-html5
+    - title: Java
+      text: 
+      icon: si si-openjdk
+    - title: C / C++
+      text: 
+      icon: si si-cplusplus
+    - title: Visual Basic
+      text: 
+      icon: fas fa-code
+    - title: Galil GDK
+      text: 
+      icon: fas fa-terminal
+- title: Mechanical Design
+  items:
+    - title: Computer Aided Design
+      text: 
+      icon: fas fa-cube
+    - title: Finite Element Analysis
+      text: 
+      icon: fas fa-vials
+    - title: Manufacturing Drawings
+      text: 
+      icon: fas fa-compass-drafting
+    - title: Prototype Assemblies
+      text: 
+      icon: fas fa-subscript
+- title: Software Development
+  items:
+    - title: Windows Programs
+      text: 
+      icon: si si-windows
+    - title: MacOS Programs
+      text: 
+      icon: si si-macos
+    - title: Solidworks Macros
+      text: 
+      icon: si si-dassaultsystemes
+    - title: Solidworks Extensions
+      text: 
+      icon: si si-dassaultsystemes
+    - title: OctoPrint Plugins
+      text: 
+      icon: si si-octoprint
+    - title: Raspberry Pi
+      text: 
+      icon: si si-raspberrypi
+    - title: Arduino
+      text: 
+      icon: si si-arduino
+- title: Libraries & Frameworks
+  items:
+    - title: Flask
+      text: 
+      icon: si si-flask
+    - title: Jekyll
+      text: 
+      icon: si si-jekyll
+    - title: Bootstrap
+      text: 
+      icon: si si-bootstrap
+    - title: jQuery
+      text: 
+      icon: si si-jquery
+    - title: Matplotlib
+      text: 
+      icon: fas fa-chart-bar
+    - title: PyQT
+      text: 
+      icon: si si-qt
+    - title: WinForms
+      text: 
+      icon: si si-windows
+    - title: Numpy
+      text: 
+      icon: si si-numpy
+    - title: OpenCV
+      text: 
+      icon: si si-opencv
+    - title: Excel
+      text:
+      icon: si si-microsoftexcel
+    - title: Word
+      text:
+      icon: si si-microsoftword
+    - title: SQL
+      text:
+      icon: fas fa-database
+  

@@ -1,0 +1,70 @@
+- title: Mechanical Design
+  text: >
+    Custom tooling design, automation systems, electronics enclosures, and interface panels are my specialties.
+    I have experience designing for 3d printing or traditional manufacturing, using FEA to verify and optimize designs, and creating assembly and manufacturing drawings.
+  icon: fas fa-compass-drafting
+  points:
+    - Custom Tools and Jigs
+    - Automation Systems
+    - Electronics Enclosures
+    - User Interface PAnels
+    - Design for Manufacturing
+    - Design for 3D Printing
+    - FEA Simulation
+
+- title: Solidworks CAD
+  text: >
+    With extensive experience using Solidworks, I can help with everything including part modelling, drawings, simulations, macros, routing, PDM, and more.
+    I can help set up, repair, or upgrade solidworks workstations, remodel parts and assemblies from other CAD programs, model and simulate exsting parts, or model new solutions.
+  icon: si si-dassaultsystemes
+  points:
+    - Part Modelling
+    - Assemblies
+    - Drawings
+    - Simulations
+    - Macros
+    - Custom Extensions
+
+- title: 3D Printing
+  text: >
+    With nearly a decade of 3D printing experience, I can help you with anything from selecting the perfect 3D printer for your needs to designing fully custom solutions.
+    Discover the potential of high-temperature materials such as PEEK, PEKK, PEI, and more.
+  icon: fas fa-print
+
+- title: Reverse Engineering
+  text: >
+    Starting from drawings, images, or existing models, I can create detailed 3d models and drawings of existing parts and assemblies.
+    I also provide 3D scanning services for small to medium-sized objects, delivering highly accurate and detailed models.
+  icon: fas fa-rotate-left
+
+- title: Electrical Systems
+  text: >
+    I have extensive experience designing and building electrical systems like remote monitoring tools, robotic systems, and motorized vehicles.
+    I can also design fully custom PCBs for sensors, motor drivers, microcontrollers, battery management systems, and more!
+  icon: fas fa-microchip
+
+- title: Spreadsheets & Macros
+  text: >
+    From creating complex spreadsheets to automating data processes, I can streamline your workflows for efficiency and accuracy.
+    Leverage macros, pivot tables, and data analysis to stay up to date and make informed decisions.
+  icon: fas fa-table
+
+- title: Document Automation
+  text: >
+    Automate data collection, conversion, analysis, and presentation with Excel and Word integration.
+    Create template reports that you can easily reuse as often as needed.
+    Easily update graphs, tables, images, and almost anything else without wasting time.
+  icon: fas fa-file
+
+- title: Website Design
+  text: >
+    Stand out online with a custom website.
+    Showcase your company's projects and services in style and make sure you're found by your customers.
+    I can create fully custom website or use existing template and libraries to meet your design and budget needs.
+  icon: fas fa-globe
+
+- title: Web Applications
+  text: >
+    Easily access and manage documents and data with custom internal or public web applications for your business.
+    Inventory Tracking, Asset Management, Data Analysis, Remote Access, or whatever else you need, I can help.
+  icon: fas fa-server

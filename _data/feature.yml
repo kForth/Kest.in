@@ -1,0 +1,13 @@
+imgs: 
+  - /assets/img/feature/1.jpg
+
+title: Hi there!
+text: >
+  I'm a Mechanical and Software Designer based in Hamilton, Ontario, Canada.
+  With expertise in mechanical design, electrical systems, and software development, I offer comprehensive solutions tailored to your needs.
+  I'm always looking to tackle new projects and expand my skillset.
+  Let's collaborate and turn your ideas into reality with expertise and creativity.
+links:
+  - text: Contact Me!
+    href: "#contact"
+    class: btn btn-primary

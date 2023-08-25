@@ -1,0 +1,10 @@
+{% include core/head.html %}
+{% include snippets/color_modes.html %}
+<div class="position-fixed bottom-0 start-0 mb-3 ms-3">
+  <a class="btn btn-secondary py-2 d-flex align-items-center" type="button" href="#home">
+    <i class="fas fa-chevron-up"></i>
+    <span class="visually-hidden" id="bd-theme-text">Back to Top</span>
+  </a>
+</div>
+{{ content }}
+{% include core/foot.html %}
